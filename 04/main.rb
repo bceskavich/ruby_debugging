@@ -15,8 +15,8 @@ require_relative 'dependencies/cool_formatter.rb'
 require_relative 'dependencies/workshop_formatter.rb'
 
 class Information
-  include CoolFormatter
   include WorkshopFormatter
+  include CoolFormatter
 
   attr_reader :language, :version, :workshop
 
@@ -33,7 +33,7 @@ class Information
   end
 end
 
-information = Information.new('Ruby', '2.6.2', 'Ruby debugging')
+information = Information.new('Ruby', '2.7.1', 'Ruby debugging')
 
 binding.pry # This is our breakpoint, the program will stop executing here
 information.display_info
