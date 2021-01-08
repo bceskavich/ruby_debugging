@@ -19,7 +19,7 @@ class Information
   def initialize(language, version, workshop)
     @language = language
     @version = version
-    workshop = workshop
+    @workshop = workshop
   end
 
   def to_s
@@ -31,5 +31,5 @@ end
 
 binding.pry # This is our breakpoint, the program will stop executing here
 
-information = Information.new('Ruby', '2.6.2', 'Ruby debugging')
+information = Information.new('Ruby', '2.7.1', 'Ruby debugging')
 information.to_s
