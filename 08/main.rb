@@ -30,6 +30,10 @@ class Information
     @workshop = workshop
   end
 
+  def log
+    display_info
+  end
+
   private
 
   def display_info
@@ -41,5 +45,5 @@ end
 
 binding.pry # This is our breakpoint, the program will stop executing here
 
-information = Information.new('Ruby', '2.6.2', 'Ruby debugging')
-information.display_info
+information = Information.new('Ruby', '2.7.1', 'Ruby debugging')
+information.log
