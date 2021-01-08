@@ -5,8 +5,8 @@ class CoolLogger
 
   class << self
     def log(language, version, workshop)
-      puts "Language: #{@language}"
-      puts "Version: #{@version}"
+      puts "Language: #{language}"
+      puts "Version: #{version}"
       super
     end
   end

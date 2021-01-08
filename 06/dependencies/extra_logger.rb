@@ -1,5 +1,5 @@
 module ExtraLogger
-  def log(workshop)
+  def log(language, version, workshop)
     puts "Extra logging for fun and profit!"
     puts "Workshop: #{workshop}"
   end

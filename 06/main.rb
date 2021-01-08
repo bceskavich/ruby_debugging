@@ -31,4 +31,4 @@ class Information < CoolLogger
 end
 
 binding.pry # This is our breakpoint, the program will stop executing here
-information = Information.log('Ruby', '2.6.2', 'Ruby debugging')
+information = Information.log('Ruby', '2.7.1', 'Ruby debugging')
