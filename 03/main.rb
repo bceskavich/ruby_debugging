@@ -18,6 +18,8 @@ require_relative 'dependencies/cool_formatter.rb'
 class Information
   include CoolFormatter # What is going on here?
 
+  attr_reader :language, :version, :workshop
+
   def initialize(language, version, workshop)
     @language = language
     @version = version
