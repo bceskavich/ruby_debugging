@@ -1,5 +1,5 @@
 module One
   def useful_information(workshop)
-    puts "Trust me: #{worshop}"
+    puts "Trust me: #{workshop}"
   end
 end
